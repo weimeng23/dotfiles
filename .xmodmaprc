@@ -12,7 +12,7 @@ add control = Control_L Control_R
 
 !
 ! Method two :
-! Swap Caps and Control_L 
+! Swap Caps_Lock and Control_L 
 ! use this method
 !
 ! clear lock 
