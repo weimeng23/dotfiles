@@ -1,2 +1,2 @@
 # dotfiles
-@meng does dotfiles for ubuntu and macOS
+@wwmeng223 does dotfiles for ubuntu and macOS
