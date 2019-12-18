@@ -1,13 +1,13 @@
-# dotfiles
+# Dotfiles
 @wmeng223 does dotfiles for Ubuntu and OS X
 
 
-### xmodmap 
+### Xmodmap
 
-method 1:
+On Ubuntu, use `gnome-session-properties` to add `xmodmap ~/.xmodmaprc` into autorun
 
-remove Caps_Lock  and replace it with Control_L
+Two keyboard configuration here:
 
-method 2: 
+1. Remove Caps_Lock  and replace it with Control_L
 
-Swap Caps and Control_L 
+2. Swap Caps and Control_L 
