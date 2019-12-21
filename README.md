@@ -4,7 +4,7 @@
 
 ### Xmodmap
 
-On Ubuntu, use `gnome-session-properties` to add `xmodmap ~/.xmodmaprc` into autorun
+On Ubuntu, use `gnome-session-properties` to add `xmodmap /home/$USER/.xmodmaprc` into autorun (use absolute path better)
 
 Two keyboard configuration here:
 
