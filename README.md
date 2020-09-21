@@ -1,6 +1,23 @@
 # Dotfiles
 @wmeng223 does dotfiles for Ubuntu and OS X
 
+## Install
+
+
+
+## Components
+
+### Tmux
+
+1. Use default prefix key
+
+2. Automatically renumber the windows of a session after any window is closed
+
+3. Large history message (200000 lines)
+
+### Inputrc
+
+Ignore case and display a list of possible files for us
 
 ### Xmodmap
 
