@@ -2,8 +2,7 @@
 @wmeng223 does dotfiles for Ubuntu and OS X
 
 ## Install
-
-
+copy all dotfiles to `$HOME`
 
 ## Components
 
