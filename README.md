@@ -14,6 +14,10 @@ copy all dotfiles to `$HOME`
 
 3. Large history message (200000 lines)
 
+4. Modify window-status-format, easy to find current pane(`**` on both sides)
+
+5. Status bar updates every 2s
+
 ### Inputrc
 
 1. Ignore case and display a list of possible files for us
