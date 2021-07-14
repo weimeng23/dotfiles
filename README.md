@@ -17,7 +17,9 @@
 
 ### Inputrc
 
-Ignore case and display a list of possible files for us
+1. Ignore case and display a list of possible files for us
+
+2. Search specific command use up&down button
 
 ### Xmodmap
 
