@@ -10,13 +10,15 @@ copy all dotfiles to `$HOME`
 
 1. Use default prefix key
 
-2. Automatically renumber the windows of a session after any window is closed
+2. Base index start from 1
 
-3. Large history message (200000 lines)
+3. Automatically renumber the windows of a session after any window is closed
 
-4. Modify window-status-format, easy to find current pane(`**` on both sides)
+4. Large history message (200000 lines)
 
-5. Status bar updates every 2s
+5. Modify window-status-format, easy to find current pane(`**` on both sides)
+
+6. Status bar updates every 2s
 
 ### Inputrc
 
