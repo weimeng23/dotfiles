@@ -6,6 +6,16 @@ copy all dotfiles to `$HOME`
 
 ## Components
 
+### Neovim/Vim
+For `neovim`, install vim-plug (A minimalist Vim plugin manager.)
+
+```bash
+curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
+neovim config file in `~/.config/nvim/init.vim`
+
+
 ### Tmux
 
 1. Use default prefix key
