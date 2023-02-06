@@ -29,13 +29,17 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'joshdick/onedark.vim'
   Plug 'itchyny/lightline.vim'
   Plug 'sheerun/vim-polyglot'
-
+  Plug 'alpertuna/vim-header'
 call plug#end()
 
 
 "let g:lightline = {
 "  \ 'colorscheme': 'onedark',
 "  \ }
+let g:header_field_author = 'Meng Wei'
+let g:header_field_author_email = 'wmeng94@gmail.com'
+map <F4> :AddHeader<CR>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
