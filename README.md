@@ -13,8 +13,15 @@ For `neovim`, install vim-plug (A minimalist Vim plugin manager.)
 curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
-neovim config file in `~/.config/nvim/init.vim`
+neovim config file in `~/.config/nvim/init.vim`. Plugins installed in `~/.config/nvim/plugged`.
 
+For `vim`,
+
+```bash
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
+vim config file in `~/.vimrc`. Plugins installed in `~/.vim/plugged`. 
 
 ### Tmux
 
