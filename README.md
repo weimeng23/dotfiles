@@ -5,7 +5,7 @@
 copy all dotfiles to `$HOME`
 
 ```bash
-git clone https://github.com/weimeng23/dotfiles.git`
+git clone https://github.com/weimeng23/dotfiles.git
 cd dotfiles
 chmod +x install.sh && ./install.sh
 ```
