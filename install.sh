@@ -5,7 +5,7 @@
 # Last Modified Date: 06.02.2023
 # Last Modified By  : Meng Wei <wmeng94@gmail.com>
 
-# neo/vim
+# neovim/vim
 # for vim, set neovim=0
 neovim=1
 if [[ $neovim == 1 ]];then
