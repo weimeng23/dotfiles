@@ -1,3 +1,5 @@
+# Table of contents
+
 - [Dotfiles](#dotfiles)
   * [Install](#install)
   * [Components](#components)
