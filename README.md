@@ -1,3 +1,14 @@
+- [Dotfiles](#dotfiles)
+  * [Install](#install)
+  * [Components](#components)
+    + [Neovim or Vim](#neovim-or-vim)
+    + [Tmux](#tmux)
+    + [Inputrc](#inputrc)
+    + [Xmodmap](#xmodmap)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
 # Dotfiles
 @weimeng23 does dotfiles for Ubuntu and OS X
 
@@ -12,7 +23,8 @@ chmod +x install.sh && ./install.sh
 
 ## Components
 
-### Neovim/Vim
+### Neovim or Vim
+
 For `neovim`, install vim-plug (A minimalist Vim plugin manager.)
 
 ```bash
