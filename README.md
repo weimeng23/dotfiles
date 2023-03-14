@@ -27,7 +27,9 @@ chmod +x install.sh && ./install.sh
 
 ### Neovim or Vim
 
-For `neovim`, install vim-plug (A minimalist Vim plugin manager.)
+***No need to execute***
+
+For `neovim`, install vim-plug (A minimalist Vim plugin manager.) 
 
 ```bash
 curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
