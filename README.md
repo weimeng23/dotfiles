@@ -1,20 +1,22 @@
-# Table of contents
+# Dotfiles
+
+@weimeng23 does dotfiles for Ubuntu and OS X
+
+## Table of contents
 
 - [Dotfiles](#dotfiles)
-  * [Install](#install)
-  * [Components](#components)
-    + [Neovim or Vim](#neovim-or-vim)
-    + [Tmux](#tmux)
-    + [Inputrc](#inputrc)
-    + [Xmodmap](#xmodmap)
+  - [Table of contents](#table-of-contents)
+  - [Install](#install)
+  - [Components](#components)
+    - [Neovim/Vim](#neovimvim)
+    - [Tmux](#tmux)
+    - [Inputrc](#inputrc)
+    - [Xmodmap](#xmodmap)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
-
-# Dotfiles
-@weimeng23 does dotfiles for Ubuntu and OS X
-
 ## Install
+
 copy all dotfiles to `$HOME`
 
 ```bash
@@ -25,11 +27,11 @@ chmod +x install.sh && ./install.sh
 
 ## Components
 
-### Neovim or Vim
+### Neovim/Vim
 
 ***No need to execute***
 
-For `neovim`, install vim-plug (A minimalist Vim plugin manager.) 
+For `neovim`, install vim-plug (A minimalist Vim plugin manager.)
 
 ```bash
 curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -43,7 +45,7 @@ For `vim`,
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
-vim config file in `~/.vimrc`. Plugins installed in `~/.vim/plugged`. 
+vim config file in `~/.vimrc`. Plugins installed in `~/.vim/plugged`.
 
 ### Tmux
 
@@ -73,4 +75,4 @@ Two keyboard configuration here:
 
 1. Remove Caps_Lock and replace it with Control_L (default)
 
-2. Swap Caps_Lock and Control_L 
+2. Swap Caps_Lock and Control_L
