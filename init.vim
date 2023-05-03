@@ -25,17 +25,75 @@
 "    -> Helper functions
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set nocompatible
+" For VIM 
 call plug#begin('~/.config/nvim/plugged')
-  Plug 'joshdick/onedark.vim'
-  Plug 'itchyny/lightline.vim'
-  Plug 'sheerun/vim-polyglot'
-  Plug 'alpertuna/vim-header'
+
+" Keep Plug commands between plug#begin/end.
+
+" color theme
+Plug 'joshdick/onedark.vim'
+Plug 'morhetz/gruvbox'
+Plug 'vim-scripts/peaksea'
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'vim-scripts/peaksea'
+
+" function plugin
+Plug 'itchyny/lightline.vim'
+Plug 'preservim/nerdcommenter'
+Plug 'vim-autoformat/vim-autoformat'
+Plug 'sheerun/vim-polyglot'
+Plug 'alpertuna/vim-header'
+
 call plug#end()
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Personal config
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""" nerdcommenter config """
+" Create default mappings
+let g:NERDCreateDefaultMappings = 1
 
-"let g:lightline = {
-"  \ 'colorscheme': 'onedark',
-"  \ }
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+
+" Set a language to use its alternate delimiters by default
+let g:NERDAltDelims_java = 1
+
+" Add your own custom formats or override the defaults
+let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
+
+" Enable NERDCommenterToggle to check all selected lines is commented or not
+let g:NERDToggleCheckAllLines = 1
+""" nerdcommenter config end """
+
+""" vim-autoformat config """
+let g:formatterpath = ['/root/miniconda3/bin/autopep8']
+noremap <F3> :Autoformat<CR>
+let g:autoformat_verbosemode=1
+" autocmd BufWrite *.sql,*.c,*.cc,*.cpp,*.py,*.java,*.js :Autoformat
+" let g:autoformat_autoindent = 0
+" let g:autoformat_retab = 0
+" let g:autoformat_remove_trailing_spaces = 0
+""" vim-autoformat config end """
+
+" lightline
+let g:lightline = { 'colorscheme': 'onehalfdark' }
+
+" vim-header config
 let g:header_field_author = 'Meng Wei'
 let g:header_field_author_email = 'wmeng94@gmail.com'
 map <F4> :AddHeader<CR>
@@ -145,7 +203,13 @@ set foldcolumn=1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" if (has("termguicolors"))
+"   set termguicolors
+" endif
+
 if (has("termguicolors"))
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
   set termguicolors
 endif
 
@@ -162,6 +226,8 @@ endif
 
 try
     colorscheme onedark
+    " colorscheme default
+    " colorscheme onehalfdark
 catch
 endtry
 
