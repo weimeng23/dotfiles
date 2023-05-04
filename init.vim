@@ -51,7 +51,7 @@ call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Personal config
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-""" nerdcommenter config """
+""" => nerdcommenter config
 " Create default mappings
 let g:NERDCreateDefaultMappings = 1
 
@@ -78,9 +78,9 @@ let g:NERDTrimTrailingWhitespace = 1
 
 " Enable NERDCommenterToggle to check all selected lines is commented or not
 let g:NERDToggleCheckAllLines = 1
-""" nerdcommenter config end """
+""" => nerdcommenter config end
 
-""" vim-autoformat config """
+""" => vim-autoformat config
 let g:formatterpath = ['/root/miniconda3/bin/autopep8']
 noremap <F3> :Autoformat<CR>
 let g:autoformat_verbosemode=1
@@ -88,7 +88,7 @@ let g:autoformat_verbosemode=1
 " let g:autoformat_autoindent = 0
 " let g:autoformat_retab = 0
 " let g:autoformat_remove_trailing_spaces = 0
-""" vim-autoformat config end """
+""" => vim-autoformat config end
 
 " lightline
 let g:lightline = { 'colorscheme': 'onehalfdark' }
