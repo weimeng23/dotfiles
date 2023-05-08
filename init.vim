@@ -37,7 +37,6 @@ Plug 'morhetz/gruvbox'
 Plug 'vim-scripts/peaksea'
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'vim-scripts/peaksea'
 
 " function plugin
 Plug 'itchyny/lightline.vim'
