@@ -81,7 +81,7 @@ let g:NERDToggleCheckAllLines = 1
 """ => nerdcommenter config end
 
 """ => vim-autoformat config
-let g:formatterpath = ['/root/miniconda3/bin/autopep8']
+let g:formatterpath = ['~/miniconda3/bin/autopep8']
 noremap <F3> :Autoformat<CR>
 let g:autoformat_verbosemode=1
 " autocmd BufWrite *.sql,*.c,*.cc,*.cpp,*.py,*.java,*.js :Autoformat
