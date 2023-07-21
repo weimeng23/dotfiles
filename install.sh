@@ -10,11 +10,15 @@
 neovim=1
 if [[ $neovim == 1 ]];then
     echo 'set neovim plug'
-    curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    mkdir -p ~/.config/nvim/autoload/
+    # curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    cp vimfiles/plug.vim ~/.config/nvim/autoload/plug.vim
 else
     echo 'set vim plug'
     sed -i "s/\~\/\.config\/nvim/\~\/\.vim/" init.vim
-    curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    mkdir -p ~/.vim/autoload/
+    # curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    cp vimfiles/plug.vim ~/.vim/autoload/plug.vim
 fi
 
 if [[ $neovim == 1 ]];then
