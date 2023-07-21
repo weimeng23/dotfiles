@@ -42,7 +42,7 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'itchyny/lightline.vim'
 Plug 'preservim/nerdcommenter'
 Plug 'vim-autoformat/vim-autoformat'
-Plug 'sheerun/vim-polyglot'
+" Plug 'sheerun/vim-polyglot'
 Plug 'alpertuna/vim-header'
 
 call plug#end()
@@ -97,6 +97,11 @@ let g:lightline = { 'colorscheme': 'onehalfdark' }
 let g:header_field_author = 'Meng Wei'
 let g:header_field_author_email = 'wmeng94@gmail.com'
 map <F4> :AddHeader<CR>
+
+" Python 3 provider (optional)
+if executable('python3')
+    let g:python3_host_prog = '~/miniconda3/bin/python3'
+endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
@@ -468,3 +473,29 @@ function! VisualSelection(direction, extra_filter) range
     let @/ = l:pattern
     let @" = l:saved_reg
 endfunction
+
+""" => LargeFile accelerate
+" disable syntax highlighting in big files
+function DisableSyntaxTreesitter()
+    echo("Big file, disabling syntax, treesitter and folding")
+    if exists(':TSBufDisable')
+        exec 'TSBufDisable autotag'
+        exec 'TSBufDisable highlight'
+        " etc...
+    endif
+
+    set foldmethod=manual
+    syntax clear
+    syntax off    " hmmm, which one to use?
+    filetype off
+    set noundofile
+    set noswapfile
+    set noloadplugins
+endfunction
+
+augroup BigFileDisable
+    autocmd!
+    " autocmd BufWinEnter * if getfsize(expand("%")) > 512 * 1024 | exec DisableSyntaxTreesitter() | endif
+    autocmd BufReadPre,FileReadPre * if getfsize(expand("%")) > 20 * 1024 * 1024 | exec DisableSyntaxTreesitter() | endif
+
+augroup END
