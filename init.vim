@@ -81,8 +81,23 @@ let g:NERDToggleCheckAllLines = 1
 """ => nerdcommenter config end
 
 """ => vim-autoformat config
-let g:formatterpath = ['~/miniconda3/bin/autopep8']
+" let g:formatterpath = ['/some/path/to/a/folder', '/home/superman/formatters']
+" python format
+let g:formatdef_black = '"black -q --skip-string-normalization -"'
+let g:formatters_python = ['black']
+
+" c/cpp format
+let g:formatdef_clangformat = '"clang-format --style=google"'
+let g:formatters_cpp = ['clangformat']
+let g:formatters_cc = ['clangformat']
+let g:formatters_hpp = ['clangformat']
+let g:formatters_c = ['clangformat']
+let g:formatters_h = ['clangformat']
+" let g:formatters_vue = ['eslint_local', 'stylelint']
+" let g:run_all_formatters_vue = 1
+"
 noremap <F3> :Autoformat<CR>
+" 1: only error message output
 let g:autoformat_verbosemode=1
 " autocmd BufWrite *.sql,*.c,*.cc,*.cpp,*.py,*.java,*.js :Autoformat
 " let g:autoformat_autoindent = 0
