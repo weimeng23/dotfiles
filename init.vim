@@ -32,6 +32,7 @@ call plug#begin('~/.config/nvim/plugged')
 " Keep Plug commands between plug#begin/end.
 
 " color theme
+Plug 'https://gitee.com/wmeng223/copilot.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'morhetz/gruvbox'
 Plug 'vim-scripts/peaksea'
@@ -117,6 +118,21 @@ map <F4> :AddHeader<CR>
 if executable('python3')
     let g:python3_host_prog = '~/miniconda3/bin/python3'
 endif
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Github copilot
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"
+let g:copilot_filetypes = {
+    \ 'gitcommit': v:true,
+    \ 'markdown': v:true,
+    \ 'yaml': v:true
+    \ }
+
+" big file disable copilot
+autocmd BufReadPre,FileReadPre * if getfsize(expand("%")) > 1 * 1024 * 1024 | let b:copilot_enabled = v:false | endif
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
