@@ -33,7 +33,7 @@ call plug#begin('~/.config/nvim/plugged')
 
 " color theme
 Plug 'https://gitee.com/wmeng223/copilot.vim'
-Plug 'joshdick/onedark.vim'
+Plug 'https://gitee.com/wmeng223/onedark.vim'
 Plug 'morhetz/gruvbox'
 Plug 'vim-scripts/peaksea'
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
