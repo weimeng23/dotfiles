@@ -84,7 +84,7 @@ let g:NERDToggleCheckAllLines = 1
 """ => vim-autoformat config
 " let g:formatterpath = ['/some/path/to/a/folder', '/home/superman/formatters']
 " python format
-let g:formatdef_black = '"black -q --skip-string-normalization -"'
+let g:formatdef_black = '"black -q --line-length 110 --skip-string-normalization -"'
 let g:formatters_python = ['black']
 
 " c/cpp format
