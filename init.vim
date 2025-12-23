@@ -96,7 +96,12 @@ let g:formatters_c = ['clangformat']
 let g:formatters_h = ['clangformat']
 " let g:formatters_vue = ['eslint_local', 'stylelint']
 " let g:run_all_formatters_vue = 1
-"
+
+" shell format shfmt
+let g:formatdef_shfmt = '"shfmt -i 4 -bn -ci -sr -kp"'
+let g:formatters_sh = ['shfmt']
+let g:formatters_bash = ['shfmt']
+
 noremap <F3> :Autoformat<CR>
 " 1: only error message output
 let g:autoformat_verbosemode=1
