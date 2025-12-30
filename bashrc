@@ -17,13 +17,13 @@ export PATH
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
 
-# User specific aliases and functions
 # 限制资源使用
 ulimit -c 102400  # core dump
 ulimit -s 65536      # stack size
 ulimit -l unlimited  # locked memory
 ulimit -n 100001     # open files (已经够用)
 
+# User specific aliases and functions
 log() {
     local fname=${BASH_SOURCE[1]##*/}
     echo -e "$(date '+%Y-%m-%dT%H:%M:%S') (${fname}:${BASH_LINENO[0]}:${FUNCNAME[1]}) $*"
