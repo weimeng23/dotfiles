@@ -1,15 +1,12 @@
 # .bashrc
 
-
-
 # Source global definitions
 if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
+    . /etc/bashrc
 fi
 
 # User specific environment
-if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
-then
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
     PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 fi
 export PATH
@@ -51,7 +48,7 @@ alias drmi='docker rmi'
 
 myip=""
 parse_git_branch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
 PS1="\[\e[32m\][\u@\[\e[36m\]$myip \[\e[32m\]\W]\[\033[33m\]\$(parse_git_branch) \[\e[32m\]\$\[\e[0m\] "
