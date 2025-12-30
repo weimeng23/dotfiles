@@ -23,6 +23,11 @@ ulimit -s 65536      # stack size
 ulimit -l unlimited  # locked memory
 ulimit -n 100001     # open files (已经够用)
 
+# History format
+export HISTSIZE=10000
+export HISTFILESIZE=20000
+export HISTTIMEFORMAT="%F %T | "
+
 # User specific aliases and functions
 log() {
     local fname=${BASH_SOURCE[1]##*/}
