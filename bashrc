@@ -26,7 +26,7 @@ export HISTFILESIZE=20000
 export HISTTIMEFORMAT="%F %T | "
 
 # User specific aliases and functions
-log() {
+mylog() {
     local fname=${BASH_SOURCE[1]##*/}
     echo -e "$(date '+%Y-%m-%dT%H:%M:%S') (${fname}:${BASH_LINENO[0]}:${FUNCNAME[1]}) $*"
 }
