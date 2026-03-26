@@ -8,6 +8,7 @@
   - [Table of contents](#table-of-contents)
   - [Install](#install)
   - [Components](#components)
+    - [Ghostty](#ghostty)
     - [Neovim/Vim](#neovimvim)
     - [Tmux](#tmux)
     - [Inputrc](#inputrc)
@@ -26,6 +27,30 @@ chmod +x install.sh && ./install.sh
 ```
 
 ## Components
+
+### Ghostty
+
+Ghostty config file in `~/.config/ghostty/config`.
+
+Current defaults in `config.ghostty`:
+
+1. Use `Maple Mono NF CN` with font size `14`
+
+2. Enable `Catppuccin Mocha` theme with translucent background and blur
+
+3. Use block cursor, disable cursor blink, and customize cursor color
+
+4. Enable mouse copy on select and hide mouse while typing
+
+5. Configure quick terminal to open at the top of the current screen and autohide
+
+6. Enable zsh shell integration and increase scrollback limit
+
+7. Add split-related shortcuts:
+
+   - `cmd+d` create right split
+   - `cmd+shift+enter` toggle split zoom
+   - `cmd+shift+f` toggle split zoom
 
 ### Neovim/Vim
 
