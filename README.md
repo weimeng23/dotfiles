@@ -9,6 +9,7 @@
   - [Install](#install)
   - [Components](#components)
     - [Ghostty](#ghostty)
+    - [Starship](#starship)
     - [Neovim/Vim](#neovimvim)
     - [Tmux](#tmux)
     - [Inputrc](#inputrc)
@@ -51,6 +52,20 @@ Current defaults in `config.ghostty`:
    - `cmd+d` create right split
    - `cmd+shift+enter` toggle split zoom
    - `cmd+shift+f` toggle split zoom
+
+### Starship
+
+Starship config file in `~/.config/starship.toml`.
+
+This config is based on the official [Gruvbox Rainbow preset](https://starship.rs/presets/gruvbox-rainbow).
+
+Compared with the official preset:
+
+1. Add `add_newline = true` to keep an extra blank line before each prompt
+
+2. Disable the `os` module, so the prompt does not show the system icon
+
+Other modules and styles stay aligned with the upstream preset.
 
 ### Neovim/Vim
 
